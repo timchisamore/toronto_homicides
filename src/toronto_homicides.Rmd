@@ -2,18 +2,20 @@
 title: "Toronto Homicides"
 author: "Tim Chisamore"
 date: "`r format(Sys.Date())`"
-output: html_document
+output:
+  html_document:
+    keep_md: true
 ---
 
 # 1 Introduction
 
 The Toronto Police Service (TPS) provides data on homicides, shootings, and major crime indicators (MCI), among other things, through the Public Safety Data Portal.
 
-I was interested in exploring homicides in Toronto through time and space using a variety of methods. 
+We were interested in exploring homicides in Toronto through time and space using a variety of methods. 
 
 # 2 Methods
 
-
+Initiallty, the exploration of the Toronto homicide data was descriptive in nature. We began by looking at the number of homicides by year and type
 
 # 3 Results
 
