@@ -4,4 +4,4 @@
 .Ruserdata
 .DS_Store
 data/*
-*.html
+output/documents/*.html
