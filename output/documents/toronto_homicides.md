@@ -1,7 +1,7 @@
 ---
 title: "Toronto Homicides"
 author: "Tim Chisamore"
-date: "2020-02-21"
+date: "2020-02-22"
 output:
   html_document:
     keep_md: true
@@ -15,9 +15,12 @@ We were interested in exploring homicides in Toronto through time and space usin
 
 # 2 Methods
 
-Initiallty, the exploration of the Toronto homicide data was descriptive in nature. We began by looking at the number of homicides by year and type
+Initiallty, the exploration of the Toronto homicide data was descriptive in nature. We began by looking at the number of homicides by year and continued graphically exploring other fields of interest.
+
+We then applied the Early Aberration Reporting System (EARS) C1 algorithm to the data binned into yearmonths, i.e., values of the year and month, such as Feb 2020.
 
 # 3 Results
+
 
 
 
@@ -34,5 +37,12 @@ Initiallty, the exploration of the Toronto homicide data was descriptive in natu
 ![](/Users/timothychisamore/Documents/Projects/R/toronto_homicides/output/documents/toronto_homicides_files/figure-html/homicides_by_day_and_year-1.png)<!-- -->
 
 ![](/Users/timothychisamore/Documents/Projects/R/toronto_homicides/output/documents/toronto_homicides_files/figure-html/homicide_surveillance_by_yearmonth-1.png)<!-- -->
+
+
+
+
+
+
+
 
 # 4 Discussion

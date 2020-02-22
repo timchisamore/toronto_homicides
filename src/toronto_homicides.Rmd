@@ -15,7 +15,9 @@ We were interested in exploring homicides in Toronto through time and space usin
 
 # 2 Methods
 
-Initiallty, the exploration of the Toronto homicide data was descriptive in nature. We began by looking at the number of homicides by year and type
+Initiallty, the exploration of the Toronto homicide data was descriptive in nature. We began by looking at the number of homicides by year and continued graphically exploring other fields of interest.
+
+We then applied the Early Aberration Reporting System (EARS) C1 algorithm to the data binned into yearmonths, i.e., values of the year and month, such as `r zoo::as.yearmon(Sys.Date())`.
 
 # 3 Results
 
@@ -40,11 +42,12 @@ walk(list_of_functions, source)
 
 ```
 
-```{r api_call, include=FALSE}
+```{r reading_data}
 
-toronto_homicides <- api_call()
+toronto_homicides <- reading_data()
 
 ```
+
 
 ```{r cleaaning_data, include=FALSE}
 
@@ -82,5 +85,25 @@ homicides_by_day_and_year(toronto_homicides_cleaned_formatted)
 homicide_surveillance_by_yearmonth(toronto_homicides_cleaned_formatted)
 
 ```
+
+```{r reading_spatial_data, include=FALSE}
+
+toronto_neighbourhoods <- reading_spatial_data()
+
+```
+
+```{r cleaning_spatial_data, include=FALSE}
+
+toronto_neighbourhoods_cleaned <-
+  cleaning_spatial_data(toronto_neighbourhoods)
+
+```
+
+```{r homicides_by_year_and_neighbourhood}
+
+walk(.x = 2004:2019, .f = homicides_by_year_and_neighbourhood, toronto_homicides_cleaned_formatted, toronto_neighbourhoods_cleaned)
+
+```
+
 
 # 4 Discussion

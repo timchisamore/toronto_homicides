@@ -7,7 +7,6 @@
 #' The data is written as a .csv to a local folder after being converted
 #' from .json to a tbl_df
 #'
-#' @return tbl_df
 #' @export
 #'
 #' @examples
@@ -27,7 +26,5 @@ api_call <- function() {
 		write_csv(path = here::here("data",
 																"raw",
 																"toronto_homicides.csv"))
-	
-	return(toronto_homicides_tbl_df)
 	
 }

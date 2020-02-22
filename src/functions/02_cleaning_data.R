@@ -12,13 +12,14 @@
 #' @examples
 #' cleaning_data(toronto_homicides)
 cleaning_data <- function(data) {
-	toronto_homicides_cleaned <- data %>%
-		janitor::clean_names()
-	
-	write_csv(
-		toronto_homicides_cleaned,
-		here::here("data", "intermediate", "toronto_homicides_cleaned.csv")
-	)
-	return(toronto_homicides_cleaned)
-	
+  toronto_homicides_cleaned <- data %>%
+    janitor::clean_names()
+  
+  write_csv(
+    toronto_homicides_cleaned,
+    here::here("data", "intermediate", "toronto_homicides_cleaned.csv")
+  )
+  
+  return(toronto_homicides_cleaned)
+  
 }
