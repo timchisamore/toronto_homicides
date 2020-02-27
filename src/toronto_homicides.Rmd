@@ -2,7 +2,7 @@
 title: "Toronto Homicides"
 author: "Tim Chisamore"
 date: "`r format(Sys.Date())`"
-output: github_document
+output: rmarkdown::github_document
 ---
 
 # 1 Introduction
