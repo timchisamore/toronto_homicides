@@ -30,9 +30,7 @@ homicides_by_day_and_year <- function(data) {
 		ggplot(aes(x = occurrence_year, y = occurrence_week_day, fill = n)) +
 		geom_raster() +
 		scale_x_continuous(breaks = 2004:2019) +
-		scale_fill_gradient(low = "white",
-												high = "red",
-												breaks = scales::pretty_breaks()) +
+		scale_fill_viridis_c() +
 		labs(
 			x = "Year",
 			y = "Day",
